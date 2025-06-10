@@ -22,7 +22,9 @@ app.use(
   })
 );
 
-
+app.get('/', (req, res) => {
+    res.send('Backend is alive!'); // Or res.json({ message: 'Backend is working!' });
+});
 app.use('/api/auth',Auth)
 app.use('/Portfolio',Portfolio)
 app.use((err,req,res,next)=>{
@@ -39,5 +41,6 @@ app.use((err,req,res,next)=>{
 
 app.listen(port, () => {
     connectDB();
-  console.log(`Example app listening on port ${port}`)
+  // console.log(`Example app listening on port ${port}`)
 })
+module.exports = app;
