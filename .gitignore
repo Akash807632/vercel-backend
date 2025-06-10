@@ -1,0 +1,18 @@
+node_modules
+# Python
+venv/
+*.pyc
+__pycache__/
+
+# Node
+node_modules/
+.env
+apikey.txt
+
+# Jupyter
+*.ipynb_checkpoints/
+
+# Big files
+*.h5
+*.pkl
+*.csv
