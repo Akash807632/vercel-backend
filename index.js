@@ -13,13 +13,10 @@ const cors = require("cors");
 
 
 
-// Allow all origins (Not recommended for production)
 app.use(cors());
-
-// OR allow specific origin (Recommended for security)
 app.use(
   cors({
-    origin: "http://localhost:8080", // Replace with your frontend URL
+    origin: "http://localhost:8080", 
     methods: "GET,POST,PUT,DELETE",
     credentials: true, // Allow cookies if needed
   })
